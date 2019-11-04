@@ -1,8 +1,8 @@
 package com.company;
 
 public class MyComplex {
-    double real = 0.0;
-    double imag = 0.0;
+    private double real = 0.0;
+    private double imag = 0.0;
 
     public MyComplex() {
     }
