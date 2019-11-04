@@ -18,7 +18,7 @@ public class Ball {
             this.yDelta = -1 * speed * (float)Math.sin(direction);
         }
         catch(Exception exception) {
-            exception.getMessage();
+            System.out.println(exception.getMessage());
         }
     }
 
