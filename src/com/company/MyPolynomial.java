@@ -38,17 +38,8 @@ public class MyPolynomial {
     public MyPolynomial add(MyPolynomial right) {
         MyPolynomial newMyPolynomial = new MyPolynomial(this.coeffs.clone());  // if not clone(), then it creates reference, not new MyPolynomial
 
-        try {
-            if (this.coeffs.length != right.coeffs.length) {
-                throw new Exception("Please, provide all coefficients of polynomials, according to the max one");
-            }
-
-            for(int i = 0; i < this.coeffs.length; i++) {
-                newMyPolynomial.coeffs[i] += right.coeffs[i];
-            }
-        }
-        catch (Exception exception) {
-            System.out.println(exception.getMessage());
+        for(int i = 0; i < this.coeffs.length; i++) {
+            newMyPolynomial.coeffs[i] += right.coeffs[i];
         }
 
         return newMyPolynomial;
@@ -57,17 +48,8 @@ public class MyPolynomial {
     public MyPolynomial multiply(MyPolynomial right) {
         MyPolynomial newMyPolynomial = new MyPolynomial(this.coeffs.clone());  // if not clone(), then it creates reference, not new MyPolynomial
 
-        try {
-            if (this.coeffs.length != right.coeffs.length) {
-                throw new Exception("Please, provide all coefficients of polynomials, according to the max one");
-            }
-
-            for(int i = 0; i < this.coeffs.length; i++) {
-                newMyPolynomial.coeffs[i] *= right.coeffs[i];
-            }
-        }
-        catch (Exception exception) {
-            System.out.println(exception.getMessage());
+        for(int i = 0; i < this.coeffs.length; i++) {
+            newMyPolynomial.coeffs[i] *= right.coeffs[i];
         }
 
         return newMyPolynomial;
